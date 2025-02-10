@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> <!-- GPS module  -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /> <!-- Network - wifi - sim card-->
+    <!--  Support lower than android 6.0 Permission -> Always returns GRANTED -->
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -12,6 +15,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GPSTrackerC41GMonThu"
         tools:targetApi="31">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="${MAPS_API_KEY}" />
         <activity
             android:name=".MainActivity"
             android:exported="true">

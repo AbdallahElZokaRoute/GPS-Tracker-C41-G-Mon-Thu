@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">GPS Tracker C41 G Mon Thu</string>
+    <string name="why_we_need_this_permission">Why We need this permission?</string>
+    <string name="we_need_this_permission_to_find_and_locate_nearest_drivers_for_you">We need this permission to find and locate nearest drivers for you.</string>
+    <string name="yes_i_understand">Yes, I Understand</string>
+    <string name="no_i_refuse">No,I Refuse</string>
 </resources>
